@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>size practice</title>
+    <style>
+        body {
+            color: #333;
+            font: 1.2em/1.5 sans-serif;
+            padding: 1em;
+            margin: 0;
+        }
+
+        .box {
+            border: 5px solid #000;
+            margin-bottom: 1em;
+            box-sizing: border-box; 
+            width: 400px;
+            height: 200px; 
+            /* To ensure that the border of an element stays in the same position when the text inside the element changes, you can use the box-sizing property in CSS.
+By default, the box-sizing property is set to content-box, which means that the width and height of an element do not include the padding and border. This causes the padding and border to expand outside the element when the content inside the element changes.
+To fix this issue, you can set the box-sizing property to border-box, which means that the width and height of an element include the padding and border. */
+        }
+
+        .preview {
+            min-height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="preview">
+        <div class="box box1">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae adipisci pariatur ipsum doloribus minus
+                suscipit, </p>
+        </div>
+        <div>
+            <p class="box box2">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse iure eius ab blanditiis consequatur?
+                Iusto
+                totam impedit dolorem autem? Quia reiciendis amet tempore necessitatibus pariatur a veniam harum
+                consequuntur rem blanditiis et molestias ipsam, tempora laudantium, sequi sapiente? Sequi illo delectus
+                pariatur, architecto tempore commodi vero inventore voluptas nobis incidunt est aliquid voluptate
+                quisquam
+
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+/*
+comment in CSS 
+*/
+
+h1,h2,p {text-align: center;}
+h1,h2 {font-family: Impact,serif;} /*You can add a fallback value for the font-family by adding another font name separated by a comma. Fallbacks are used in instances where the initial is not found/available. Add the fallback font serif after the Impact font. */
+h1{
+    font-size: 40px;
+    margin-top: 0;   /* 初始化，as some browser have default top margin for h1 */
+    margin-bottom: 15px;
+}
+h2{font-size: 30px;}
+.established{
+    font-style: italic;
+}
+
+/*body{background-color:burlywood;}*/
+body{
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif;
+    padding: 20px; /*To create a little more room around the menu*/
+}
+
+/*The default properties of an hr element will make it appear as a thin light grey line. Define its properties here  */
+hr{
+    /* total height of it is 4px here, as height + top border width + bottom border width*/
+    height: 2px;
+    border-width: 1px;
+
+    background-color: brown;
+    border-color: brown;
+    
+}
+
+
+.menu{
+    
+    /*width: 80% means the menu will always take up 80% of the parent (body) element's width (80% of the body background image picture)*/
+    /*On a very wide screen, the coffee and dessert appear far apart from their prices. Add a max-width property to the menu class with a value of 500px to prevent it from growing too wide. */
+    width: 80%; /* width is 80% of parent element's width */
+    max-width: 500px;
+    
+    
+    background-color: burlywood;
+    margin-left: auto;margin-right: auto; /*center the div horizontally within its parent element. The auto keyword will give the left/right side a share of the remaining space.*/
+    
+    /*give your menu some space between the content (its children Main) and its sides (its burlywood-color background side) with various padding properties.*/
+    padding: 20px;  /* padding-left/right/top/bottom all are set to 20px */
+}
+
+.flavor, .dessert{
+    text-align: left;
+    width: 75%;
+}
+
+.price{
+    text-align: right;
+    width: 25%;
+}
+
+/*The p elements are nested in [an article element whose class attribute of item]. You can style all the p elements nested anywhere in elements with a class named item like this: .item p { }
+Item 的 p elements.  */
+.item p { 
+    display: inline-block; /* styling p is inline block*/
+
+    /* Focusing on the menu items and prices, there is a fairly large gap between each line. Target all the p elements nested in elements with the class named item and set their top and bottom margin to be 5px. */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.bottom-line{
+    margin-top: 25px;
+}
+
+
+/* The image you added under <h2> is not centered horizontally like the Coffee heading above it. */
+/*img elements are "like" inline elements. */
+/* To make the image behave like heading elements (which are block-level), create an img type selector and use the value block for the display property and use the applicable margin-left and margin-right values to center it horizontally. */
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+    /* It would be nice if the vertical space between the h2 elements and their associated icons was smaller.*/
+    /* The h2 elements have default top and bottom margin space, so you could change the bottom margin of the h2 elements to say 0 or another number.*/
+    /*There is an easier way, simply add a negative top margin to the img elements to pull them up from their current positions. Negative values are created using a - in front of the value. To complete this project, go ahead and use a negative top margin of 25px in the img type selector. */
+    margin-top: -25px;
+}
+
+
+
+/*-------------------------*/
+/*-------------------------*/
+/* FOOTER */
+footer {
+    font-size: 14px;
+}
+
+.address{
+    margin-bottom: 5px;
+}
+
+/* The default color of a link that has not yet been clicked on is typically blue. */
+/* default color of a link that has already been visited from a page is typically purple.*/
+/* To make the footer links the same color regardless if a link has been visited, use a type selector for the anchor element (a) and use the value black for the color property.*/ 
+a{
+    color: black;   
+}
+/*You change properties of a link when the link has actually been visited by using a pseudo-selector that looks like a:visited { propertyName: propertyValue; }.*/
+/*Change the color of the footer [Visit our website] link to be grey when a user has visited the link.*/
+a:visited { 
+    color: grey;  
+}
+
+/*You change properties of a link when the mouse hovers over them by using a pseudo-selector that looks like a:hover { propertyName: propertyValue; }. */
+/*Change the color of the footer Visit our website link to be brown when a user hovers over it.*/
+a:hover{
+    color: brown;
+}
+
+/*You change properties of a link when the link is actually being clicked by using a pseudo-selector that looks like a:active { propertyName: propertyValue; }. */
+/*Change the color of the footer Visit our website link to be white when clicked on. */
+a:active{
+    color: white
+}
+
