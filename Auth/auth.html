@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>auth page</title>
+    <style>
+        body{ 
+            background-image: url(./background.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 25px 30px;
+            margin: 10px;
+        }
+
+
+        .container {
+            background-color:white;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center; 
+            height: 90vh;
+        }
+
+        .left-box{
+            margin: 10px;
+            padding: 10px;
+            flex: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+        }
+
+        .login_logo{
+            width: 50%;
+            height: auto;
+        }
+
+        .right-box{
+            margin: 10px;
+            padding: 10px;
+            flex: 50%;
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+        }
+
+        .login-form {
+            margin: 0;
+            padding: 0;
+            width: 80%;
+            height: auto;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .form-name{
+            text-align: center;
+            font-size:48px;
+            width:100%;
+            padding: 40px 0;
+        } 
+
+        .form-element{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: rgb(202, 203, 203);
+            border: none;
+            border-radius: 40px;
+            width:100%;
+            padding: 20px 0;
+            margin: 10px 0;
+        }
+
+        .form-label{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            padding: 0 10px 0 20px;
+        }
+        
+        .form-img{
+            width: 25px;
+            height: 25px;
+        }
+        
+        .form-input {
+            width: 100%;
+            border: none;
+            border-bottom: rgb(202, 203, 203);
+            font-size: 24px;
+            background-color: rgb(202, 203, 203);
+            border-radius: 20px;
+        }
+
+        .form-login-button{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 25px 0;
+            margin-top: 30px;
+        }
+
+        .form-forgot-password{
+            display: block;
+            width: 100%;
+            padding: 20px 0;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+    a{
+        color: grey;   
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-box">
+            <img class="login_logo" src="./logo.png" alt="logo" />
+        </div>
+
+        <div class="right-box">
+            <form class="login-form">
+                <header class="form-name">User Login</header>
+                <div class="form-element">
+                    <label class="form-label" for="Email"><img class="form-img" src="./email.png" alt="Email Icon"></label></label>
+                    <input class="form-input" type="input" placeholder="Email Id" />
+                </div>
+                <div class="form-element">
+                    <label class="form-label" for="pw"><img class="form-img" src="./password.png" alt="Email Icon"></label>
+                    <input class="form-input" type="input" placeholder="Password" />
+                </div>
+                <button class="form-login-button">Login</button>
+                <div class="form-forgot-password">
+					<a href="#">Forgot Username/Password?</a>
+				</div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
+
